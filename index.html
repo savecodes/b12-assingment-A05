@@ -10,10 +10,14 @@
         rel="stylesheet">
     <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <!-- Fonts apply full body -->
-     <style>
+    <style>
         body {
             font-family: "Hind Madurai", sans-serif;
         }
@@ -31,31 +35,53 @@
 
             <!-- Button Section -->
             <div class="flex flex-col sm:flex-row gap-2 md:gap-3">
-                <!-- button 1: light green -->
+                <!-- button 1-->
                 <button
-                    class="flex justify-center items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-full bg-[#41ff6b1a] text-black font-bold">
+                    class="flex justify-center items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-full bg-[#41ff6b1a] text-black font-bold hover:bg-[#41ff6b33]">
                     100 <img src="./assets/heart.png" alt="Heart icon" class="w-5 h-5">
                 </button>
 
-                <!-- button 2: light green -->
+                <!-- button 2-->
                 <button
-                    class="flex justify-center items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-full bg-[#41ff6b1a] text-black font-bold">
+                    class="flex justify-center items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-full bg-[#41ff6b1a] text-black font-bold hover:bg-[#04200a33]">
                     100 <img src="./assets/coin.png" alt="Coin icon" class="w-5 h-5">
                 </button>
 
-                <!-- button 3: green -->
-                <button class="px-4 py-2 md:px-6 md:py-3 rounded-full bg-[#00a63e] text-white font-bold">
+                <!-- button 3-->
+                <button
+                    class="px-4 py-2 md:px-6 md:py-3 rounded-full bg-[#00a63e] text-white font-bold hover:bg-[#0a44039a]">
                     2 Copy
                 </button>
             </div>
         </div>
-        <!-- nav section end here -->
-         
+
         <!-- Banner Section -->
-        
+        <div class="py-5 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]
+">
+            <!-- Banner Logo Section -->
+            <div class="flex justify-center items-center">
+                <img src="./assets/logo-dark.png" alt="Banner Logo" class="w-[92px] h-[92px]">
+            </div>
+            <!-- Banner Text area -->
+            <div class="flex flex-col justify-center items-center text-white font-bold px-4 py-8">
+                <h1 class="font-extrabold text-xl sm:text-xl md:text-2xl lg:text-3xl text-center">
+                    Emergency Service Directory
+                </h1>
+
+                <div class="flex justify-center w-full">
+                    <p
+                        class="text-sm sm:text-base md:text-lg lg:text-xl mt-4 max-w-full md:max-w-3xl lg:max-w-6xl text-center whitespace-normal">
+                        Government Emergency Services at Your Fingertip – A Project by Government of the People’s
+                        Republic
+                        of Bangladesh
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Nav and banner section end here -->
     </header>
     <main>
-
+        
     </main>
 </body>
 
