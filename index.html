@@ -36,9 +36,9 @@
             <!-- Button Section -->
             <div class="flex flex-col sm:flex-row gap-2 md:gap-3">
                 <!-- button 1-->
-                <button
+                <button id="top-heart"
                     class="flex justify-center items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-full bg-[#41ff6b1a] text-black font-bold hover:bg-[#41ff6b33]">
-                    100 <img src="./assets/heart.png" alt="Heart icon" class="w-5 h-5">
+                    0 <img src="./assets/heart.png" alt="Heart icon" class="w-5 h-5">
                 </button>
 
                 <!-- button 2-->
@@ -48,9 +48,9 @@
                 </button>
 
                 <!-- button 3-->
-                <button
+                <button id="top-copy"
                     class="px-4 py-2 md:px-6 md:py-3 rounded-full bg-[#00a63e] text-white font-bold hover:bg-[#0a44039a]">
-                    2 Copy
+                    0 Copy
                 </button>
             </div>
         </div>
@@ -84,7 +84,7 @@
         <!-- Main section এর grid gap বাড়ান -->
         <section id="helpline-container" class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 py-6">
             <!-- Helpline Card Section -->
-            <section class="lg:col-span-9 p-6 min-h-screen">
+            <section class="lg:col-span-9 order-2 lg:order-1">
                 <!-- Helpline card 1-9 here -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -100,25 +100,26 @@
                         </div>
 
                         <!-- Title & subtitle -->
-                        <h2 class="text-lg font-bold text-gray-900">National Emergency Number</h2>
+                        <h2 class="data-title text-lg font-bold text-gray-900">National Emergency Number</h2>
                         <p class="text-gray-500 text-sm mb-4">National Emergency</p>
 
                         <!-- Number & tag -->
                         <div class="gap-2 mb-4">
-                            <h1 class="text-2xl font-extrabold text-gray-900">999</h1>
+                            <h1 class="data-number text-2xl font-extrabold text-gray-900">999</h1>
                             <span class="text-gray-500 text-sm bg-gray-200 px-2 py-0.5 rounded-full">All</span>
                         </div>
 
                         <!-- Buttons -->
                         <div class="flex gap-2">
                             <button
-                                class="flex-1 flex justify-center items-center gap-2 border border-gray-300 text-gray-700 rounded-lg px-4 py-2 hover:bg-gray-100">
+                                class="copy-btn flex-1 flex justify-center items-center gap-2 border border-gray-300 text-gray-700 rounded-lg px-4 py-2 hover:bg-gray-100">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <a href="tel:999"
-                                class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700">
+                            <button
+                                class="call-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700"
+                                data-title="National Emergency Number" data-number="999">
                                 <i class="fa-solid fa-phone"></i> Call
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -148,10 +149,11 @@
                                 class="flex-1 flex justify-center items-center gap-2 border border-gray-300 text-gray-700 rounded-lg px-4 py-2 hover:bg-gray-100">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <a href="tel:999"
-                                class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700">
+                            <button
+                                class="call-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700"
+                                data-title="Police Helpline Number" data-number="999">
                                 <i class="fa-solid fa-phone"></i> Call
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <!-- Card 3 -->
@@ -181,10 +183,11 @@
                                 class="flex-1 flex justify-center items-center gap-2 border border-gray-300 text-gray-700 rounded-lg px-4 py-2 hover:bg-gray-100">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <a href="tel:999"
-                                class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700">
+                            <button
+                                class="call-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700"
+                                data-title="Fire Service Number" data-number="999">
                                 <i class="fa-solid fa-phone"></i> Call
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <!-- Card 4 -->
@@ -214,10 +217,11 @@
                                 class="flex-1 flex justify-center items-center gap-2 border border-gray-300 text-gray-700 rounded-lg px-4 py-2 hover:bg-gray-100">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <a href="tel:999"
-                                class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700">
+                            <button
+                                class="call-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700"
+                                data-title="Ambulance Service" data-number="1994-999999">
                                 <i class="fa-solid fa-phone"></i> Call
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <!-- Card 5 -->
@@ -247,10 +251,11 @@
                                 class="flex-1 flex justify-center items-center gap-2 border border-gray-300 text-gray-700 rounded-lg px-4 py-2 hover:bg-gray-100">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <a href="tel:999"
-                                class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700">
+                            <button
+                                class="call-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700"
+                                data-title="Women & Child Helpline" data-number="109">
                                 <i class="fa-solid fa-phone"></i> Call
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <!-- Card 6 -->
@@ -280,10 +285,11 @@
                                 class="flex-1 flex justify-center items-center gap-2 border border-gray-300 text-gray-700 rounded-lg px-4 py-2 hover:bg-gray-100">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <a href="tel:999"
-                                class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700">
+                            <button
+                                class="call-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700"
+                                data-title="Anti-Corruption Helpline" data-number="106">
                                 <i class="fa-solid fa-phone"></i> Call
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <!-- card 7 -->
@@ -313,10 +319,11 @@
                                 class="flex-1 flex justify-center items-center gap-2 border border-gray-300 text-gray-700 rounded-lg px-4 py-2 hover:bg-gray-100">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <a href="tel:999"
-                                class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700">
+                            <button
+                                class="call-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700"
+                                data-title="Electricity Helpline" data-number="162116">
                                 <i class="fa-solid fa-phone"></i> Call
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <!-- card 8 -->
@@ -346,10 +353,11 @@
                                 class="flex-1 flex justify-center items-center gap-2 border border-gray-300 text-gray-700 rounded-lg px-4 py-2 hover:bg-gray-100">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <a href="tel:999"
-                                class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700">
+                            <button
+                                class="call-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700"
+                                data-title="Brac Helpline" data-number="16445">
                                 <i class="fa-solid fa-phone"></i> Call
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <!-- Card 9 -->
@@ -379,17 +387,19 @@
                                 class="flex-1 flex justify-center items-center gap-2 border border-gray-300 text-gray-700 rounded-lg px-4 py-2 hover:bg-gray-100">
                                 <i class="fa-regular fa-copy"></i> Copy
                             </button>
-                            <a href="tel:999"
-                                class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700">
+                            <button
+                                class="call-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white rounded-lg px-4 py-2 hover:bg-green-700"
+                                data-title="Bangladesh Railway Helpline" data-number="163">
                                 <i class="fa-solid fa-phone"></i> Call
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <!-- Card Section Ends here -->
                 </div>
             </section>
             <!-- Helpline Data history -->
-            <aside class="lg:col-span-3 rounded-xl px-4 pt-6 pb-6 w-full min-h-screen">
+            <!-- Call History Aside -->
+            <aside class="lg:col-span-3 order-1 lg:order-2 bg-white rounded-xl px-4 pt-6 pb-6 w-full h-auto">
                 <!-- Call History header -->
                 <div class="bg-white rounded-lg p-4 shadow-sm mb-4">
                     <div class="flex items-center justify-between">
@@ -397,17 +407,19 @@
                             <i class="fa-solid fa-clock-rotate-left text-gray-700"></i>
                             <h1 class="text-lg font-semibold text-gray-900">Call History</h1>
                         </div>
-                        <button
+                        <button id="clear-history"
                             class="px-5 py-2 rounded-full bg-[#00a63e] text-white font-semibold hover:opacity-80 transition">
                             Clear
                         </button>
                     </div>
+                    <!-- Call History List -->
+                    <div id="call-history-list" class="overflow-y-auto max-h-96 space-y-2"></div>
                 </div>
-                <!-- Call History List -->
-                 
             </aside>
+
         </section>
     </main>
+    <script src="./index.js"></script>
 </body>
 
 </html>
