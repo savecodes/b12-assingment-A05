@@ -12,8 +12,14 @@ Needs loop/iteration to access multiple elements.
 
 ## How do you create and insert a new element into the DOM?
 
+document.createElement("div") → creates a new empty <div> element in memory (not yet visible in the page).
+
+newDiv.textContent = "Programming Hero" → sets the inner text of that <div>.
+
+document.body.appendChild(newDiv) → inserts the <div> into the DOM at the end of the <body>.
+
 let newDiv = document.createElement("div");
-newDiv.textContent = "Hello World";
+newDiv.textContent = "Programming Hero";
 document.body.appendChild(newDiv);  
 
 ## Question 3
